@@ -1,12 +1,54 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🎬 Movie Finder
 
-Currently, two official plugins are available:
+> Projeto React para busca de filmes usando a OMDb API, com design moderno, favoritos e navegação entre páginas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias
 
-## Expanding the ESLint configuration
+- [React 19](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router DOM](https://reactrouter.com/)
+- OMDb API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Funcionalidades
+
+- Buscar filmes por nome
+- Visualizar detalhes do filme
+- Adicionar e remover favoritos (armazenados no navegador)
+- Paginação de resultados
+- Design responsivo e tema escuro
+
+## Como rodar o projeto
+
+1. Instale as dependências:
+	```bash
+	npm install
+	```
+2. Crie um arquivo `.env` na raiz com sua chave da OMDb API:
+	```env
+	VITE_OMDB_API_KEY=sua_chave_aqui
+	```
+3. Rode o projeto em modo desenvolvimento:
+	```bash
+	npm run dev
+	```
+4. Acesse em [http://localhost:5173](http://localhost:5173)
+
+## Scripts disponíveis
+
+- `npm run dev` — inicia o servidor de desenvolvimento
+- `npm run build` — gera build de produção
+- `npm run preview` — pré-visualiza o build
+- `npm run lint` — executa o linter
+
+## Estrutura principal
+
+- `src/components` — componentes reutilizáveis (Header, MovieCard, SearchBar, etc)
+- `src/pages` — páginas principais (Busca, Favoritos, Detalhes)
+- `src/services/api.js` — integração com OMDb API
+- `src/hooks/useFavorites.js` — hook para favoritos
+
+---
+
+Projeto desenvolvido para fins de estudo/prática. Sinta-se livre para customizar!
